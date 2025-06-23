@@ -19,7 +19,7 @@ export default function Features() {
     },
     {
       title: "Metas Personalizadas",
-      description: "Defina metas diárias e alcance seus objetivos de saúde.",
+      description: "Defina metas diárias e alcance seus objetivos de saúde de uma forma mais personalizada.",
       link: "/metas",
     },
   ];
@@ -30,10 +30,10 @@ export default function Features() {
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Funcionalidades do FitTrack</h2>
         <div className="grid gap-8 sm:grid-cols-2">
           {features.map((feature, index) => (
-            <Link href={feature.link} key={index}>
-              <div className="p-6 bg-white rounded-lg shadow hover:shadow-md transition cursor-pointer">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+            <Link href={feature.link} key={index} passHref>
+              <div className="p-6 bg-green-500 rounded-lg shadow hover:shadow-md transition cursor-pointer">
+                <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+                <p className="text-green-800">{feature.description}</p>
               </div>
             </Link>
           ))}
